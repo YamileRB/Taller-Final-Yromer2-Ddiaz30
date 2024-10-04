@@ -1,9 +1,9 @@
+package Formularios;
 
-import Datalle.Detalles;
-import Menu.MenuPrincipal;
+import Definiciones.Definiciones;
+import MenuPrincipal.MenuPrincipal;
 
 import java.util.Scanner;
-import java.lang.*;
 
 
 class Formulario {
@@ -16,49 +16,53 @@ class Formulario {
             scanneroption.nextLine(); // Captura el salto de línea restante
             switch (eleccion) {
                 case 1:
-                    Detalles.detalleCasoUno();
+                    FormularioSubmenu.subMenu(scanneroption);
                     MenuPrincipal.esperarEnter(scanneroption);
                     break;
                 case 2:
-                    Detalles.detalleCasoDos();
-                    MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
+                    Definiciones.definicionString();
+                    MenuPrincipal.esperarEnter(scanneroption);
                     break;
                 case 3:
-                    Detalles.detalleCasoTres();
-                    MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
+                    Definiciones.definicionConstante();
+                    MenuPrincipal.esperarEnter(scanneroption);
                     break;
                 case 4:
-                    Detalles.detalleCasoCuatro();
-                    MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
+                    FormularioSubmenu2.subMenu2(scanneroption);
+                    MenuPrincipal.esperarEnter(scanneroption);
                     break;
                 case 5:
-                    Detalles.detalleCasoCinco();
-                    MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
+                    FormularioSubmenu3.subMenu3(scanneroption);
+                    MenuPrincipal.esperarEnter(scanneroption);
                     break;
+
                 case 6:
-                    Detalles.detalleCasoSeis();
+                    Definiciones.definicionSwitch();
                     MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
                     break;
                 case 7:
-                    Detalles.detalleCasoSiete();
+                    Definiciones.definicionTernaria();
                     MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
                     break;
                 case 8:
-                    Detalles.detalleCasoocho();
+                    Definiciones.definicionBucleDowhile();
                     MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
                     break;
                 case 9:
-                    Detalles.detalleCasoNueve();
+                    Definiciones.definicionWhile();
                     MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
                     break;
                 case 10:
-                    Detalles.detalleCasoDiez();
+                    Definiciones.definicionFor();
                     MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
                     break;
                 case 11:
-                    Detalles.detalleCasoOnce();
+                    Definiciones.definicionForEach();
                     MenuPrincipal.esperarEnter(scanneroption);//espera que se de enter para continuar
                     break;
+
+                default:break;
+
             }
         } while (eleccion != 0);
 

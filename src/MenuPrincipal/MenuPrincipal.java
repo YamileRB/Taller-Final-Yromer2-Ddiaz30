@@ -1,4 +1,4 @@
-package Menu;
+package MenuPrincipal;
 
 import java.util.Scanner;
 
@@ -25,5 +25,4 @@ public class MenuPrincipal {
         System.out.println("Presione Enter para continuar...");
         scanner.nextLine(); // Espera a que el usuario presione Enter
     }
-
 }
